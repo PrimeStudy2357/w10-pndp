@@ -3,6 +3,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import MyForm from "./components/MyForm";
 import { useAjax } from "./hooks/useAjax";
+import MyQueryField from "./components/MyQueryField";
 
 function App() {
   const { getUser } = useAjax();
@@ -29,6 +30,10 @@ function App() {
           2. Ajax Request
         </button>
       </div>
+
+      {/* <div>
+        <MyQueryField />
+      </div> */}
     </>
   );
 }
